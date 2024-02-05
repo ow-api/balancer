@@ -1,5 +1,7 @@
 FROM alpine AS assets
 
+RUN apk add --no-cache git
+
 RUN mkdir /src \
     && cd /src \
     && git clone https://github.com/ow-api/website.git
