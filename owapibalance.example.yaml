@@ -1,0 +1,12 @@
+# Define the caching mechanism
+# Supported: memory, redis
+cache:
+  driver: memory
+  # For redis, servers can be configured with key: addr notation
+  servers:
+    server1: '127.0.0.1:6379'
+
+# Define the backends with keys name and url
+backends:
+  - name: some-server
+    url: http://1.2.3.4:8080
